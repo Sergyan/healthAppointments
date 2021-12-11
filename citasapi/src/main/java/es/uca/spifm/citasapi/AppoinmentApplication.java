@@ -70,6 +70,13 @@ public class AppoinmentApplication implements CommandLineRunner {
 			user.setIdentityDocument("444");
 			user.setDoctor(doctor);
 			user = userService.save(user);
+			
+			user = new User();
+			user.setFirstName("Quentin");
+			user.setLastName("Tarantino");
+			user.setIdentityDocument("555");
+			user.setDoctor(doctor);
+			user = userService.save(user);
 
 		}
 
